@@ -1,4 +1,4 @@
-# Source for my CV @ http://www.udondan.com/
+# Source for my CV @ http://www.udondan.com
 
 My little overengineered static single page.
 
