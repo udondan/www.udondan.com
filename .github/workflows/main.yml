@@ -1,0 +1,45 @@
+name: Build public page
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - hugo/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.2.2
+        with:
+          hugo-version: "0.58.3"
+          # extended: true
+
+      - name: Build Hugo page
+        run: cd hugo && hugo --destination ../public --minify
+
+      - name: Creat PDF
+        uses: udondan/html-to-pdf-action@master
+        #uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: ./public/index.html
+          outputFile: ./public/daniel-schroeder-resume.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Built Hugo page..." -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

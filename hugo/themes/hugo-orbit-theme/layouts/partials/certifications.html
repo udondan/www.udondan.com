@@ -1,0 +1,8 @@
+            <div class="certifications-container container-block">
+                <h2 class="container-block-title">{{ i18n "certifications" }}</h2>
+                <ul class="list-unstyled certifications-list">
+				{{ range .Site.Params.certifications.list }}
+                    <li><a href="{{ .url }}">{{ .title }}</a></li>
+				{{ end }}
+                </ul>
+            </div><!--//certifications-->

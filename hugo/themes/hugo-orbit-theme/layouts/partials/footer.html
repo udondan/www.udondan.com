@@ -1,0 +1,5 @@
+    <footer class="footer">
+        <div class="text-center">
+				<small class="copyright">{{ now.Year }} &copy; {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ else }}Ported for Hugo by <a href="https://github.com/aerohub" target="_blank">Pavel Kanyshev</a>{{ end }} – Last modified: {{ now.Format "02. January 2006"}} – Built with <a href="https://gohugo.io/">Hugo</a>, hosted on AWS S3</small>
+        </div><!--//container-->
+    </footer><!--//footer-->

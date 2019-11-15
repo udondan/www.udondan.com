@@ -1,0 +1,375 @@
+# Page settings
+
+baseurl = "https://www.udondan.com/"
+languageCode = "en-us"
+title = "Daniel Schroeder Resume"
+theme = "hugo-orbit-theme"
+#googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+disableKinds = [
+    "404",
+    "sitemap",
+    "RSS",
+    "taxonomy",
+    "taxonomyTerm",
+    "page",
+    "section",
+    "robotsTXT"
+]
+
+[blackfriday]
+  fractions = false
+
+[params]
+
+# Meta
+    title = "Daniel Schroeder Resume"
+    description = "Daniel Schroeder Resume"
+    author = "Daniel Schroeder"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Daniel Schroeder"
+        tagline = "**Full** Stack Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa fa-globe"
+        url = "https://www.udondan.com/"
+        title = "Web"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/daniel-schroeder-udondan/"
+        title = "LinkedIn"
+
+        [[params.contact.list]]
+        class = "stackoverflow"
+        icon = "fab fa-stack-overflow"
+        url = "https://stackoverflow.com/users/2753241/udondan"
+        title = "Stack Overflow"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fab fa-github"
+        url = "https://github.com/udondan"
+        title = "GitHub"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fab fa-twitter"
+        url = "https://twitter.com/udondan"
+        title = "Twitter"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fab fa-xing"
+        url = "https://www.xing.com/profile/Daniel_Schroeder66"
+        title = "Xing"
+
+    # Experiences section
+    [params.certifications]
+        enable = true
+        title = "Certifications"
+
+        [[params.certifications.list]]
+        image = "cloud-practitioner.png"
+        title = "AWS Certified Cloud Practitioner"
+        #icon = "fab fa-aws"
+        url = "http://bit.ly/aws-cloud-practitioner"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "German"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+    # Languages section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Home automation (OpenHAB)"
+
+        [[params.interests.list]]
+        interest = "Astronomy"
+
+
+
+
+# Main body sections
+
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Intro"
+        summary = """Professional developer since **2001**.
+
+Take **ownership** of projects, problems and solutions.
+
+Build great tooling. **Bash** hero, **Makefile** ninja.
+
+**Python** is the scripting language of my choice – I avoid using scripting languages.
+
+**Go** is my preferred language.
+
+*Can* lead, <u>want to **code**</u>.
+
+I do the full stack:
+
+- Application / Service / Microservice design
+- Front- and backend development
+- DB schema design – PostgreSQL, MySQL
+- Observability – Metrics, logging, tracing
+- Server administration / management & virtualization
+- Containers – for development, testing, CI and prod
+- Infrastructure as code – Terraform, CloudFormation
+- Automation
+- CI/CD – DotCI, Jenkins pipeline
+
+As important as code is **documentation**: My code ships with Owner’s and/or User’s manual.
+
+Plenty of experience working in widely **distributed teams**. Working remotely since 2013.
+
+Familiar with many **collaboration tools** such as GitHub, Slack, HipChat, Zoom, Fuze, Jira, Asana, Trello, Confluence, MediaWiki…
+
+Not ashamed to admit: I’m using **Stack Overflow** a lot – but I also give back: #3 contributor for **Ansible**. 40k reputation, in list of top 5% answerers for **git**, **Docker**, **ssh**, **Jinja2**, *CSS*…
+
+Enjoy to contribute to **open source**. Inventor of [Ansible Silo](https://groupon.github.io/ansible-silo/).
+
+Technologies I want to work with: **Go**, **AWS**, **Serverless**, **Bash**, **Automation**, **Docker**, **Python**, **Chef**
+
+Things I don’t want to go back to: Ruby, Java, PHP, .NET"""
+
+
+
+
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+
+        [[params.jobs.list]]
+        position = "Software Engineer SAP Central Services"
+        dates = "Nov 2019 – Present"
+        company = "DB Systel – Frankfurt, Germany"
+        details = """- Managing SAP Infrastructure in AWS via Ansible and CloudFormation"""
+
+
+        [[params.jobs.list]]
+        position = "Software Engineer Cloud Core"
+        dates = "Nov 2018 – Oct 2019"
+        company = "Groupon Inc – Remote – Frankfurt, Germany"
+        details = """- Managed all company AWS accounts and baseline configuration via Terraform/Terragrunt
+- Established a modular, extendable tooling framework based on Terragrunt, aws-okta, tfenv, Terraform Landscape and a lot of Makefile, to get teams started quickly with robust, secure and reliable multi-account IaC
+- Designed and built multi-account/multi-environment Terraform CI/CD system based on AWS API Gateway, Lambda, Fargate, DynamoDB and S3"""
+
+
+        [[params.jobs.list]]
+        position = "Software Engineer Infrastructure Engineering"
+        dates = "Jul 2017 – Nov 2018"
+        company = "Groupon Inc – Remote – Frankfurt, Germany"
+        details = """- VM provisioning, management and user support (KVM/QEMU/Virsh)
+- Developed Golang microservice “application” for managing complete lifecycle of VMs (request, approve, allocation, deployment, migration, deletion) – based on libvirt, Go kit, GORM, PostgreSQL
+- VM console tool written in Golang: Automatically creating SSH tunnels to VM hosts, connecting to VNC port for troubleshooting VMs without SSH connection
+- Manually migrated and enhanced graphs and dashboards for 23 services from legacy in-house graphing tool to VMware Wavefront
+- Created system to cache external package repositories
+  - Support for Debian and FreeBSD packages but focus on CentOS/RPM (e.g. EPEL, ELRepo)
+  - Snapshot tagging for reproducible installations, "Infrastructure Versioning"
+  - Automated upstream syncing
+  - ZFS Replication across 3 data-centers
+  - Functionality to upload custom packages
+  - Based on mrepo, FreeNAS, custom Python tooling and Ansible for standard operations
+- Containerization of applications to improve reliability/speed of building, testing and deployment (Docker, Docker service)
+- Automated image building via Jenkins, DotCI"""
+
+
+        [[params.jobs.list]]
+        position = "Software Engineer OPS Engineering"
+        dates = "Jul 2014 – Jul 2017"
+        company = "Groupon Inc – Remote – Frankfurt, Germany"
+        details = """- Invented Ansible Silo (Open Source) - 100% self-contained drop-in replacement for Ansible, Ansible Version Manager, Playbook Bundler - https://groupon.github.io/ansible-silo/
+- Built "Redis as a Service", large scale high available Redis clusters with configurable number of shards and replication rings.
+  - Based on Redis Sentinel, twemproxy/nutcracker (by Twitter)
+  - Standard operations and lifecycle management via Ansible
+  - Rack-aware to avoid SPOF
+- Created tooling/framework for Ansible >= 1.3 which provided some essential features only introduced with Ansible 2, including Galaxy-like role distribution with support for Ansible plugins
+- Set up internal Ansible Galaxy hub and created a complete set of roles for managing whole CentOS 6/7 systems including:
+  - DNS resolvers and Named local server configuration
+  - NTP configuration
+  - sshd configuration
+  - Network interface configuration incl. bonding and bridges
+  - User management
+  - Kernel settings
+  - Automatic (+configurable) log rotation
+  - Automatic (+configurable) log forwarding to Splunk
+  - Automatic (+configurable) metrics forwarding to Nagios
+- Ansible callback plugins for sending events to Nagios, automatic downtime, HipChat notifications
+- Serverspec tests for testing Ansible roles"""
+
+
+        [[params.jobs.list]]
+        position = "Software Engineer Platform Operations"
+        dates = "May 2013 – Jul 2014"
+        company = "Groupon Inc – Remote – Frankfurt, Germany"
+        details = """- Managed global Splunk infrastructure with ~200 indexers and 20+ TB daily indexing volume
+- Splunk user support for scheduled searches and dashboards, review and optimization
+- Wrote custom Ruby plugins for Splunk searches
+- Managed updates and custom app distribution through Splunk Deployment Server"""
+
+
+        [[params.jobs.list]]
+        position = "Head of PHP Development"
+        dates = "Feb 2011 – Apr 2013"
+        company = "Groupon Inc – Berlin, Germany"
+        details = """- Responsible for building and leading a PHP development team from scratch with up to 35 developers
+- Designed and built PHP applications based on Zend Framework for the high traffic system of the Groupon network
+- Technical lead for GrouponShop, Job-, Blog- and premium-partner-systems as well as all Online Marketing applications, e.g. Landingpages, Adwords realtime bidding, Newsletter-, Tracking and Ad-Systems"""
+
+
+        [[params.jobs.list]]
+        position = "Senior PHP Developer"
+        dates = "May 2007 – Feb 2011"
+        company = "publicgarden GmbH – Berlin, Germany"
+        details = """- Created websites for various customers, mostly based on webEdition and Drupal
+- Installed, configured and themed various Forum-, Blog- and Shop-systems
+- Development of PHP applications and modules for various systems (Drupal, webEdition, Magento)
+- Created HTML/CSS-Templates based on PSD drafts"""
+
+
+        [[params.jobs.list]]
+        position = "Freelancer"
+        dates = "Sep 2004 – Feb 2011"
+        company = "Self-employed – Berlin, Germany"
+        details = """- Contract work for various agencies. HTML, CSS, JavaScript, PHP, CMS (mostly webEdition)
+- Created HTML/CSS-Templates based on PSD drafts."""
+
+
+        [[params.jobs.list]]
+        position = "IT application development specialist (apprenticeship)"
+        dates = "Apr 2001 – Aug 2004"
+        company = "silver.solutions GmbH – Berlin, Germany"
+        details = """- Apprenticeship "FIAE" (Fachinformatiker Anwendungsentwicklung - IT application development specialist)
+- Developed web applications based on HTML, CSS, JavaScript, XML, PHP, webservices and databases (MySQL, Xindice, Tamino)
+- Built websites based on content management systems (eZ Publish, Imperia 5)"""
+
+
+        [[params.jobs.list]]
+        position = "Carer in area of education"
+        dates = "Oct 2000 – Apr 2001"
+        company = "Regenbogenfabrik e.V. – Berlin, Germany"
+        details = """- Took care of children and teenagers in the internet café "Globales Lokal"
+- Administered SuSE Linux clients
+- First contact with HTML and PHP by maintaining the website of "Globales Lokal"
+- Gave HTML introduction courses for interested kids"""
+
+
+
+    # Projects section
+    [params.projects]
+        enable = false
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[params.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[params.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[params.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[params.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [params.skills]
+        enable = false
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python & Django"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Angular"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Ruby on Rails"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Sketch & Photoshop"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Daniel Schroeder"
