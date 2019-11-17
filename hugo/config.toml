@@ -84,7 +84,13 @@ disableKinds = [
         title = "Twitter"
 
         [[params.contact.list]]
-        class = "twitter"
+        class = "keybase"
+        icon = "fab fa-keybase"
+        url = "https://keybase.io/udondan"
+        title = "Keybase"
+
+        [[params.contact.list]]
+        class = "xing"
         icon = "fab fa-xing"
         url = "https://www.xing.com/profile/Daniel_Schroeder66"
         title = "Xing"
