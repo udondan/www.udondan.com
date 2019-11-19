@@ -1,6 +1,9 @@
 provider "aws" {
   region  = "us-east-1"
   version = "2.26.0"
+  assume_role {
+    role_arn = var.role_arn
+  }
 }
 
 provider "template" {
