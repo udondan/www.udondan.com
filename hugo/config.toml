@@ -125,7 +125,7 @@ disableKinds = [
         title = "Interests"
 
         [[params.interests.list]]
-        interest = "Home automation (OpenHAB)"
+        interest = "Home automation (IoBroker)"
 
         [[params.interests.list]]
         interest = "Astronomy"
