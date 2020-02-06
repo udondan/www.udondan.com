@@ -194,7 +194,9 @@ Things I don’t want to go back to: Ruby, Java, PHP, .NET"""
         position = "Software Engineer SAP Central Services"
         dates = "Nov 2019 – Present"
         company = "DB Systel – Frankfurt, Germany"
-        details = """- Managing SAP Infrastructure in AWS via Ansible and CloudFormation"""
+        details = """- Managing SAP Infrastructure in AWS
+- Migrating Ansible and CloudForamtion IaT to [AWS **CDK**](https://aws.amazon.com/cdk/)
+- Built autoscaling Ansible Tower cluster"""
 
 
         [[params.jobs.list]]
