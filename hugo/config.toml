@@ -46,7 +46,7 @@ disableKinds = [
     # Profile section
     [params.profile]
         name = "Daniel Schroeder"
-        tagline = "**Full** Stack Developer"
+        tagline = "**Full** Stack Automator"
         avatar = "profile.png"
 
     # Contact section
@@ -150,6 +150,8 @@ Build great tooling. **Bash** hero, **Makefile** ninja.
 *TypeScript* and **Python** are the scripting languages of my choice – I try to avoid scripting languages.
 
 **Go** is my preferred language.
+
+The floor is Java!
 
 *Can* lead, <u>want to **code**</u>.
 
