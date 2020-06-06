@@ -78,6 +78,30 @@ disableKinds = [
         title = "GitHub"
 
         [[params.contact.list]]
+        class = "npm"
+        icon = "fab fa-npm"
+        url = "https://www.npmjs.com/~udondan"
+        title = "npm"
+
+        [[params.contact.list]]
+        class = "PyPI"
+        icon = "fab fa-python"
+        url = "https://pypi.org/user/udondan/"
+        title = "PyPI"
+
+        [[params.contact.list]]
+        class = "nuget"
+        icon = "fas fa-cube"
+        url = "https://www.nuget.org/profiles/udondan"
+        title = "NuGet"
+
+        [[params.contact.list]]
+        class = "docker"
+        icon = "fab fa-docker"
+        url = "https://hub.docker.com/u/udondan"
+        title = "Docker Hub"
+
+        [[params.contact.list]]
         class = "twitter"
         icon = "fab fa-twitter"
         url = "https://twitter.com/udondan"
