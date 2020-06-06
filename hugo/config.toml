@@ -96,6 +96,12 @@ disableKinds = [
         title = "NuGet"
 
         [[params.contact.list]]
+        class = "rubygems"
+        icon = "fas fa-gem"
+        url = "https://rubygems.org/profiles/udondan"
+        title = "RubyGems"
+
+        [[params.contact.list]]
         class = "docker"
         icon = "fab fa-docker"
         url = "https://hub.docker.com/u/udondan"
