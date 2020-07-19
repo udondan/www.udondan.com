@@ -195,13 +195,13 @@ I do the full stack:
 - Containers – for development, testing, CI and prod
 - Infrastructure as code – CDK, CloudFormation, Terraform
 - Automation
-- CI/CD – DotCI, Jenkins pipeline
+- CI/CD – GitHub Actions, GitLab Pipelines, AWS CodePipeline, DotCI, Jenkins pipeline
 
 As important as code is **documentation**: My code ships with Owner’s and/or User’s manual.
 
 Plenty of experience working in widely **distributed teams**. Working remotely since 2013.
 
-Familiar with many **collaboration tools** such as GitHub, Slack, HipChat, Zoom, Fuze, Jira, Asana, Trello, Confluence, MediaWiki, Microsoft Teams…
+Familiar with many **collaboration tools** such as GitHub, GitLab, Slack, HipChat, Zoom, Fuze, Jira, Asana, Trello, Confluence, MediaWiki, Microsoft Teams…
 
 Not ashamed to admit: I’m using **Stack Overflow** a lot – but I also give back: #3 contributor for **Ansible**. 43k reputation, in list of top 5% answerers for **git**, **Docker**, **ssh**, **Jinja2**, **CSS**…
 
