@@ -46,7 +46,7 @@ disableKinds = [
     # Profile section
     [params.profile]
         name = "Daniel Schroeder"
-        tagline = "**Full** Stack Automator"
+        tagline = "Full Stack Automator"
         avatar = "profile.png"
 
     # Contact section
@@ -205,7 +205,7 @@ Familiar with many **collaboration tools** such as GitHub, Slack, HipChat, Zoom,
 
 Not ashamed to admit: I’m using **Stack Overflow** a lot – but I also give back: #3 contributor for **Ansible**. 43k reputation, in list of top 5% answerers for **git**, **Docker**, **ssh**, **Jinja2**, **CSS**…
 
-Enjoy to contribute to **open source**. Inventor of [Ansible Silo](https://groupon.github.io/ansible-silo/).
+Enjoy to contribute to **open source**. Inventor of [IAM Floyd](https://github.com/udondan/iam-floyd) and [Ansible Silo](https://groupon.github.io/ansible-silo/).
 
 Technologies I want to work with: **TypeScript**, **AWS**, **AWS CDK**, **Go**, **Serverless**, **Bash**, **Automation**, **Docker**, **Chef**
 
