@@ -125,6 +125,12 @@ disableKinds = [
         url = "https://www.xing.com/profile/Daniel_Schroeder66"
         title = "Xing"
 
+        [[params.contact.list]]
+        class = "tree-nation"
+        icon = "fas fa-seedling"
+        url = "https://tree-nation.com/profile/impact/daniel-schroeder"
+        title = "Tree Nation"
+
     # Experiences section
     [params.certifications]
         enable = true
