@@ -26,6 +26,10 @@
   .main-wrapper .section-title .fa {
     width: auto;
   }
+
+  .sidebar-wrapper .co2-neutral {
+    display: none !important;
+  }
 }
 
 .sidebar-wrapper {
