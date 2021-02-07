@@ -140,7 +140,7 @@ disableKinds = [
         image = "cloud-practitioner.png"
         title = "AWS Certified Cloud Practitioner"
         #icon = "fab fa-aws"
-        url = "http://bit.ly/aws-cloud-practitioner"
+        url = "https://www.youracclaim.com/badges/07763edc-1baf-4ddb-a8f1-67d8b778ae3e"
 
     # Languages section
     [params.language]
