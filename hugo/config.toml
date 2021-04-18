@@ -114,6 +114,12 @@ disableKinds = [
         title = "Twitter"
 
         [[params.contact.list]]
+        class = "dev"
+        icon = "fab fa-dev"
+        url = "https://dev.to/udondan"
+        title = "DEV"
+
+        [[params.contact.list]]
         class = "keybase"
         icon = "fab fa-keybase"
         url = "https://keybase.io/udondan"
