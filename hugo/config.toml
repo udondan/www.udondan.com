@@ -46,7 +46,10 @@ disableKinds = [
     # Profile section
     [params.profile]
         name = "Daniel Schroeder"
-        tagline = "Full Stack Automator"
+        tagline = """Full Stack Automator
+
+[AWS Community Builder](https://aws.amazon.com/developer/community/community-builders/)
+        """
         avatar = "profile.png"
 
     # Contact section
@@ -183,7 +186,7 @@ disableKinds = [
         enable = true
         icon = "fa-user"
         title = "Intro"
-        summary = """Professional developer since **2001**.
+        summary = """Professional developer since **2001**. [AWS Community Builder](https://aws.amazon.com/developer/community/community-builders/) since 2021.
 
 Take **ownership** of projects, problems and solutions.
 
@@ -239,9 +242,12 @@ Things I don’t want to go back to: Ruby, Java, PHP, .NET"""
         dates = "Nov 2019 – Present"
         company = "DB Systel – Frankfurt, Germany"
         details = """- Managing SAP Infrastructure in AWS
-- Team CISO — Responsible for AWS account and system security
-- Migrating Ansible and CloudForamtion IaC to [AWS **CDK**](https://aws.amazon.com/cdk/)
-- Built autoscaling Ansible Tower cluster"""
+- Responsible for AWS account and system security
+- Migrated Ansible and CloudFormation IaC to [AWS **CDK**](https://aws.amazon.com/cdk/)
+- Built autoscaling Ansible Tower cluster
+- Replaced Ansible Tower with custom serverless solution based on AWS SSM, Lambda, ECS w/ Fargate
+- Managing Gitlab runner infrastructre, build environments and pipelines for dozens of projects
+- Ansible Molecule testing for 100+ roles"""
 
 
         [[params.jobs.list]]
