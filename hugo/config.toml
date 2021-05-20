@@ -48,7 +48,7 @@ disableKinds = [
         name = "Daniel Schroeder"
         tagline = """Full Stack Automator
 
-[AWS Community Builder](https://aws.amazon.com/developer/community/community-builders/)
+AWS Community Builder
         """
         avatar = "profile.png"
 
